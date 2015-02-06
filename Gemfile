@@ -28,6 +28,10 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'settingslogic'
 gem 'dotenv-rails'
 
+group :production do
+  gem 'pg'
+end
+
 group :development, :test do
   gem 'pry-rails'
   gem 'better_errors'
