@@ -39,4 +39,5 @@ group :development do
   gem 'hirb'
   gem 'hirb-unicode'
   gem 'rails_best_practices'
+  gem 'html2slim'
 end
