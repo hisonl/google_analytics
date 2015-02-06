@@ -5,4 +5,15 @@ javascript:
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
   ga('create', 'UA-59337685-1', 'auto');
+
+  // 会員/非会員
+  var user_status = '#{@current_user.present? ? '会員' : '非会員'}';
+  console.log(user_status);
+  ga('set', 'dimension1', user_status);
+
+  // 国
+  var country = '#{@current_user.country unless @current_user.nil?}';
+  console.log(country);
+  ga('set', 'dimension2', country);
+
   ga('send', 'pageview');
