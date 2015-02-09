@@ -1,2 +1,6 @@
 | step 2
-= link_to 'Go thanks', '/top/thanks'
+p
+  = link_to 'Go thanks', '/top/thanks'
+
+p
+  = link_to 'Go to google', 'http://google.com', onclick: "ga('send', 'event', 'show', 'google);".html_safe
