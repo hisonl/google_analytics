@@ -7,7 +7,7 @@ javascript:
   // セキュリティで保護されていないページ（HTTP）からの送信も含め、常にSSLを使用してGAのデータを送信
   ga('set', 'forceSSL', true);
 
-  ga('create', 'UA-59337685-1', 'auto');
+  ga('create', 'UA-59337685-1', {'cookieDomain': 'none'});
 
   // user_id取得
   //var user_id = '#{SecureRandom.urlsafe_base64(24).tr('lIO0', 'sxyz')}';
